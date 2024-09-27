@@ -1,0 +1,43 @@
+RDP to an ubuntu machine/vm from a windows computer
+https://phoenixnap.com/kb/ubuntu-remote-desktop-from-windows
+
+
+Install xrdp on Ubuntu
+1. Update the ubuntu packages
+	- sudo apt update
+
+2. install xrdp
+	- sudo apt install xrdp -y
+
+3. Check the status of the xrdp serverL
+	- sydo systemctl status xrdp
+	- Ensure that the xrdp server is running
+
+Configure xrdp Port (Optional)
+1. Edit the xrdp configuration file xrdp.ini
+	- sudo nano /et/xrdp/xrp.ini
+
+2. Locate the port directive in the [Globals] section and set the desired value. In this example the rdp port is 49952
+
+3. Save the changes
+
+4. Restart the xrdp server to apply the changes
+	- sudo systemctl restart xrdp
+
+Open a port for incoming traffic in ufw - Ubuntu Firewall
+1. Check the status of the ufw firewall
+	- sudo ufw status
+
+2. Allow traffic on port 3389 or choose a different port for your rdp connection
+	- This command allows the port 49952 through the firewall
+	- sudo ufw allow 49952/tcp
+
+3. Reload the ufw firewall tool to apply the changes
+	- sudo ufw reload
+
+Configure the remote desktop connection on Windows
+1. Open windows rdp
+
+2. Enter the ip address or name of the ubuntu machine/vm
+	- If the port number is not the default number, then you need to specify the port as well
+	- IP_address:port_number
