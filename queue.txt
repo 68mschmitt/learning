@@ -97,6 +97,12 @@ Notes about things that I want to know about
 		- AIX           - IBM
 	- AT&T sold the rights to Unix in the early 90s to Novell and then it was sold to The Open Group
 	- The Open Group allows the use of the mark for certified operating systems that comply with the Single UNIX Specification (SUS)
+	- Unix systems are characterized by a modular design also known as the Unix Philosophy
+	- The philosophy specifies several simple rules including...
+		- Provide a set of simple tools, each of which performs a limited, well-defned function
+		- A unified inode-based filesystem and an inter-process communication mechanism known as "pipes" serve as the main means of communication
+		- A shell scripting and command language (the Unix shell) is used to combine the tools to perform complex workflows
+		- It distinguishes itself from others by being the first portable operating system and is almost completely written in C which allows Unix to run on numerous platforms
 
 - Additional UNIX Resources
 	- https://github.com/sirredbeard/awesome-unix
