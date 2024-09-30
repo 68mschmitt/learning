@@ -1,0 +1,30 @@
+- Apple DOS - https://en.wikipedia.org/wiki/Apple_DOS
+	- OS for the apple 2 from 1978 - 1983
+	- It was superseded by the ProDOS in 1983
+	- Has three major releases
+		- DOS 3.1 DOS 3.2 DOS 3.3
+	- Prior to the release of DOS 3.1, Apply users had to rely on audio cassette tapes for data storage and retrieval
+
+- ProDOS - https://en.wikipedia.org/wiki/Apple_ProDOS
+	- The original ProDOS was renamed to ProDOS 8
+		- This is because it ran on the 8-bit apple II computer
+	- It became the most popular DOS for the apple II 10 months after its release in 1983
+	- ProDOS 16 came out to support 16-bit computers, but was replaced by GS/OS within 2 years of release
+
+- Apple GS/OS - https://en.wikipedia.org/wiki/Apple_GS/OS
+	- An OS developed by apply computer for its apple 2 GS personal computer
+	- I provided facilities for accessing file systems, controlling IO devices, loading and running program files, and a system allowing programs to handle interrupts and signals
+	- It uses ProDOS as its primary filing system
+
+- Apple Computer - https://en.wikipedia.org/wiki/Apple_Inc.
+	- Apple Inc. is an americal multinational corporation and tech company incorporated and headquartered in Cupertino, California, in Silicon Valley.
+	- It was incorporated by Steve Wozniak and Steve Jobs in 1977; as of 2023, Apple is the largest tech company by revenue
+
+	- The company was founded to produce and market Wozniak's Apple 1 personal computer. Its second computer, the apple 2, became a best seller as one of the first mass-produced microcomputers.
+	- Apple introduced the Lisa in 1983 and the Macintosh in 1984, as some of the first computers to use a graphical user interface and a mouse 
+	- Due to internal problems, Jobs left apple in 1985 and formed neXT, Inc and Wozniak left to pursue other ventures.
+	- John Sculley served as long-time CEO for a decade
+	- Apple lost considerable market share in the 90s and was weeks away from bankruptcy
+	- In 1997 Apple bought neXT Inc and Steve Jobs came back as CEO for apple
+	- Jobs was able to recover considerable market share with the release of the i-series of products
+		- iPod, iMac, iPhone, iTunes

@@ -1,0 +1,26 @@
+- x86 Based Personal Computers - https://en.wikipedia.org/wiki/X86
+	- Also known as 80x86 or the 8086 family
+	- A family of complex instruction set computer (CISC) instruction set architectures
+	- Initially developed by Intel based on the 8086 microprocessor and its 8-bit-externa but variant the 8088
+	- The 8086 was introduced in 1978 as a fully 16-bit extension of 8-bit Intel's 8080 microprocessor, with memory segmentation as a solution for addressing more memory than can be covered by a plain 16-bit address
+	- The term x86 came into being because of the series of microprocessors that followed were all made with names that ended in 86
+		- 80186 - https://en.wikipedia.org/wiki/Intel_80186
+		- 80286 - https://en.wikipedia.org/wiki/Intel_80286
+		- 80386 - https://en.wikipedia.org/wiki/I386
+		- 80486 - https://en.wikipedia.org/wiki/I486
+
+- x86 vs x64 - https://phoenixnap.com/kb/x64-vs-x86
+	- x86 and x64 refer to the two most widely usd types of instruction set architectures (ISA) created by intel and amd. An ISA specifies the behavior of machine code and defines how the software controls the CPU
+	- ISA is the hardware and software interface, defining what the CPU can do and how
+	- The number of bits a processor is designed to process determine how much information the CPU can process per cycle. For example, a 32-bit CPU transfers up to 32 bits of data per clock cycle
+	- The limitations for x86 are is in it's ability to only handle a maximum memory of 4096MB of RAM
+	- Since the total number of supported cobnations is 2^32 (4294,967,295), the 32-bit processor has 4.29 billion memory locations. Each location stores one byte of data. 
+
+	What is x64 Architecture?
+	- x64 (short for x86-64)
+	- It is an instruction set based on the x86 architecture that was built to handle 64 bit code.
+	- It can operate in 64 bit mode or compatibility mode that supports 16 and 32 bit processes
+	- x64 can handle much more memory than the x86 and additionally it has a greater number of regiter stores, 16
+	- It can handle up to 16 billion gigabytes of memory, 16 Exobytes
+	- It allows the CPU to process 64-bits of data per clock cycle
+

@@ -1,0 +1,7 @@
+- CP/m - https://en.wikipedia.org/wiki/CP/M
+	- Originally stood for Control Program/Monitor
+	- Later changed to Control program for microcomputers
+	- Created in 1974 for the Intal 8080/85 based microcomuters
+	- It is a DOS - Disk Operating System
+	- It was eventually displaces by DOS following the 1981 introduction of the IBM PC
+

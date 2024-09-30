@@ -1,0 +1,15 @@
+- S-100 Bus - https://en.wikipedia.org/wiki/S-100_bus
+	- Alrair bus, IEEE 696-1983
+	- The s-100 bus was an expansion bus that allowed consumers to expand their computers with additional Expansion cards
+	- This provided the basis for modularity when building a computer, either at home or in the office
+
+- Computer Bus - https://en.wikipedia.org/wiki/Bus_(computing)
+	- A communication system that transfers data internally within a computer or between computers
+	- In most computers there is an internal bus known as the system bus that connects the cpu and memory
+
+- Expansion Bus - https://en.wikipedia.org/wiki/Expansion_cardhttps://en.wikipedia.org/wiki/Expansion_card
+	- We will refer to the expansion card in this definition and reference the expansion bus within it
+	- An expansion card is a printed circuit board that expands functionality of a computer
+	- It can be a nic (network interface card), Graphics card, Hard drive adapter card, raid card, etc
+	- The expansion bus is the row of slots that these expansion cards plug into
+
