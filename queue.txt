@@ -18,3 +18,4 @@ Notes about things that I want to know about
 	- Sortix
 	- ToaruOS
 - Haskell
+- Bit manipulation - https://graphics.stanford.edu/~seander/bithacks.html
