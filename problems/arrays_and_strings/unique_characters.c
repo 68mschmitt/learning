@@ -1,8 +1,11 @@
 #include <stdio.h>
+#include <string.h>
+#include <stdbool.h>
 
 int isUnique( char str[] )
 {
-	int sizeOfArray = *(&str + 1) - str;
+	int sizeOfArray = strlen(str);
+	printf("%d\n", sizeOfArray);
 	int checker = 0;
 	for (int i = 0; i < sizeOfArray; i++)
 	{
@@ -16,11 +19,24 @@ int isUnique( char str[] )
 	return 1;
 }
 
+int isUniqueStandard( char str[] )
+{
+	int size = strlen(str);
+	bool set[128] = { false };
+	for (int i = 0; i < size; i++)
+	{
+		if (set[str[i]]) return 0;
+		set[str[i]] = true;
+	}
+
+	return 1;
+}
+
 int main()
 {
 	char str[25];
 	printf("Enter a string to check for unique values: ");
 	scanf("%s", str);
-	printf("%d\n", isUnique( str ));
+	printf("%d\n", isUniqueStandard( str ));
 	return 0;
 }
