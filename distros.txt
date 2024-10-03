@@ -1,0 +1,109 @@
+# Unix
+  - OpenBSD
+    - Fugulta
+    - MirBSD
+
+  - NetBSD
+
+  - DragonflyBSD
+
+  - FreeBSD
+    - GhostBSD
+    - MidnightBSD
+    - HardendedBSD
+    - TrueNAS CORE
+    - pfSense
+    - OPNsense
+    - Open Server 10
+    - XigmaNAS
+    - helloSystem
+
+  # Linux
+    - Slackware
+      - Salix
+
+    - Devuan
+      - heads
+      - Gnuinos
+
+    - Gentoo
+      - Funtoo
+      - Redcore
+
+    - Alpine
+      - Adelie
+
+    - Void
+
+    - GuixSD
+
+    - Linux from scratch
+
+    - Dragora
+
+  # Popular Commercial Linux Distros
+    - Ubuntu
+      - Pop!_OS
+      - elementaryOS
+
+    - Red Hat Enterprise
+
+    - SUSE Linux Enterprise
+
+    - Oracle
+
+    - Deepin
+
+    - Clear Linux
+
+  # Popular Non-Commercial Linux Distros
+    - Debian
+
+    - Fedora
+
+    - CentOS Stream
+
+    - Mageia
+
+    - OpenSUSE
+
+    - Arch
+      - Manjaro
+      - Parabola
+
+    - Solus
+
+    - Mint
+
+# Mobile Linux Distros
+  - Android
+  - Chome OS
+  - CopperheadOS
+  - postmarketOS
+  - Halium Project
+  - LineageOS
+  - Mer
+  - Sailfish OS
+  - Tizen
+  - WebOS
+  - LineOS
+
+# Unique Linux Distros
+  - Windows Linux Subsystem
+  - QubesOS
+  - Bedrock
+  - GoboLinux
+  - GNUSTEP
+  - oasis
+  - Tails
+  - Red Star OS
+  - Kali Linux
+  - NixOS Linux
+
+# Embedded/IoT-Focused Linux Distros
+  - OpenWrt
+  - Angstrom
+  - Poky
+  - Ubuntu Core
+  - Raspberry Pi OS
+  - Tiny Core Linux
