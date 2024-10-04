@@ -1,0 +1,15 @@
+/home/mschmitt/projects/learning/cci/linkedListProblems/bin/Debug/net8.0/linkedListProblems
+/home/mschmitt/projects/learning/cci/linkedListProblems/bin/Debug/net8.0/linkedListProblems.deps.json
+/home/mschmitt/projects/learning/cci/linkedListProblems/bin/Debug/net8.0/linkedListProblems.runtimeconfig.json
+/home/mschmitt/projects/learning/cci/linkedListProblems/bin/Debug/net8.0/linkedListProblems.dll
+/home/mschmitt/projects/learning/cci/linkedListProblems/bin/Debug/net8.0/linkedListProblems.pdb
+/home/mschmitt/projects/learning/cci/linkedListProblems/obj/Debug/net8.0/linkedListProblems.GeneratedMSBuildEditorConfig.editorconfig
+/home/mschmitt/projects/learning/cci/linkedListProblems/obj/Debug/net8.0/linkedListProblems.AssemblyInfoInputs.cache
+/home/mschmitt/projects/learning/cci/linkedListProblems/obj/Debug/net8.0/linkedListProblems.AssemblyInfo.cs
+/home/mschmitt/projects/learning/cci/linkedListProblems/obj/Debug/net8.0/linkedListProblems.csproj.CoreCompileInputs.cache
+/home/mschmitt/projects/learning/cci/linkedListProblems/obj/Debug/net8.0/linkedListProblems.sourcelink.json
+/home/mschmitt/projects/learning/cci/linkedListProblems/obj/Debug/net8.0/linkedListProblems.dll
+/home/mschmitt/projects/learning/cci/linkedListProblems/obj/Debug/net8.0/refint/linkedListProblems.dll
+/home/mschmitt/projects/learning/cci/linkedListProblems/obj/Debug/net8.0/linkedListProblems.pdb
+/home/mschmitt/projects/learning/cci/linkedListProblems/obj/Debug/net8.0/linkedListProblems.genruntimeconfig.cache
+/home/mschmitt/projects/learning/cci/linkedListProblems/obj/Debug/net8.0/ref/linkedListProblems.dll

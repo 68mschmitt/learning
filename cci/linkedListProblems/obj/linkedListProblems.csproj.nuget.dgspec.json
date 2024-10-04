@@ -1,0 +1,61 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/mschmitt/projects/learning/cci/linkedListProblems/linkedListProblems.csproj": {}
+  },
+  "projects": {
+    "/home/mschmitt/projects/learning/cci/linkedListProblems/linkedListProblems.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/mschmitt/projects/learning/cci/linkedListProblems/linkedListProblems.csproj",
+        "projectName": "linkedListProblems",
+        "projectPath": "/home/mschmitt/projects/learning/cci/linkedListProblems/linkedListProblems.csproj",
+        "packagesPath": "/home/mschmitt/.nuget/packages/",
+        "outputPath": "/home/mschmitt/projects/learning/cci/linkedListProblems/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/mschmitt/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.108/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
