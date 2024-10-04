@@ -1,5 +1,0 @@
-- How does a computer work?
-- What is machine code?
-- How does a compiler work? What are the components?
-- History of C Programming Language
-- What is a micro-processor
