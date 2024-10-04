@@ -1,0 +1,44 @@
+## Linked List
+
+# The "Runner Technique"
+- Also known as the second pointer
+- Start with two pointers and have p1 move 2 spaces for every 1 space p2 moves. When p1 hits the end of the linked list p2 will be at the midpoint. Then we move p1 back to the head of the linked list and begin to weave the elements together
+
+# Recursive Problems
+- Many linked list problems rely on recursion
+- Recursive solutions all take at least O(n)
+- Recursive solutions can be accomplished iteratively, but are much more complex
+
+## INTERVIEW QUESTIONS ##
+- Remove Dups
+  - Remove duplicates from an unsorted linked list
+  - What if you can't use a temporary buffer?
+- Return Kth to last
+  - Find the kth to last element of a singly linked list
+- Delete middle node
+  - Delete a node in the middle of a singly linked list, given only access to that node
+  - Example:
+    - Input:  the node c from the linked list a->b->c->d->e->f
+    - Output: nothing is returned, but the new linked list looks like a->b->d->e->f
+- Partition
+  - Partition a linked list around a value x, such that all nodes less than x come before all nodes less than x come before all nodes greater than or equal to x.
+  - If x is contained within the list, the values of x only need to be after the elements less than x.
+  - The partition element x can appear anywhere in the "right partition"; it does not need to appear between the left and right partitions
+  - Example:
+    - Input:  3 -> 5 -> 8 -> 5 -> 10 -> 2 -> 1 [partition = 5]
+    - Output: 3 -> 1 -> 2 -> 10 -> 5 -> 5 -> 8
+- Sum Lists
+  - You have two numbers represented by a linked list, where each node contains a single digit
+  - The digits are stoed in reverse order, such that the 1's digit is at the head of the list
+  - Write a function that adds the two numbers and returns the sum as a linked list
+- Palindrome
+  - Check if a linked list is a palindrome
+- Intersection
+  - Given two (singly) linked lists, determine if the wo lists intersect
+  - Return the intersecting node
+  - Note that the intersection is defined based on reference, not value
+  - That is, if the kth node of the first linked list is the exact same note (by reference) as the jth node of the second linked list, then they are intersecting
+- Loop Detection
+  - Given a circular linked list, implement an algorthm that returns the node at the beginning of the loop
+  - DEFINITION:
+    - Circular Linked List: A (currupt) linked list in which a node's next poionter points to an earlier node, so as to make a loop in the linked list
