@@ -1,0 +1,78 @@
+### Part I - The VIM Way
+	## Practical VIM - Starting From Nothing
+
+	- <Cr> - Carriage return (Enter key)
+
+	# Tip #1 - The dot (.) command
+	- dot is used to repeat the last change
+	- It is the most powerful function in vim
+		- Side tip
+			- >G command increases the indentation of the current line to the end of the file
+
+	# Tip #2 - Don't repeat yourself
+	- For common repeatable keystrokes, vim provides a dedicated command that combines two steps into one
+	- Example:
+		- keystroke a;<Esc> to add a semicolon to the current line
+		- Then we can press dot on the next line to repeat the last change
+		- This saves us from having to press those three keys over and over again
+		- We can use A instead of a for the command and it will save us from having to press $ to get to the end of the line as well, further optimizing our keystrokes
+	- c key - 'Change' key. c+motion deletes the text in the motion and switches to insert mode
+	- C key - c$ - Delete until the end of the line and switch to insert mode
+	- s - delete char and insert
+	- S - delete line and insert
+
+	# Tip #3 - Take one step back, and three steps forward
+	- We can pad a single character with two spaces (one in front, one behind) by using an idiomatic vim solution
+	- f{char} - find the first occurrance of the input {char} on the current line and go to it
+	- ; (semicolon) - repeats the last find performed, so we can use it to iteratively traverse the current line by the search term
+	- Example;
+		- var foo = "method("+argument1+","+argument2+")";
+		- keystrokes - f+ -> s_+_<Esc> -> ; -> . -> ;. -> ;.
+		- var foo = "method(" + argument1 + "," + argument2 + ")";
+
+	# Tip #4 - Act, Repeat, Reverse
+	- We can repeat other functions as well
+	- @: repeats the last Ex command
+	- & repeats the last :substitute command
+	- f{char} - scan line for char placing cursor on char
+	- t{char} - same as f, but places cursor right before char
+	- Whenever we want to repeat a function, there is always a way to reverse it. This way when mistakes are made, we can quickly undo them or backtrack
+	- ; repeats the last f{char} motion
+	- , repeats the last f{char} motion, but in the reverse direction
+	- Intent Act Repeat Reverse
+	- Make a change {edit} . u
+	- Scan line for char f{char}/t{char} ; ,
+	- Scan line for previous char F{char}/T{char} ; ,
+	- Scan document for match /pattern<Cr> n N
+	- Scan document for previous match ?pattern<Cr> n N
+	- Perform substitution :s/target/replacement & u
+	- Execute a sequence of changes qx{changes}q @x u
+
+	# Tip #5 - Find and replace by hand
+	- There are cases where we would want to replace occurrences of a word one by one, to ensure that we are not replacing words that are spelled the same
+	- to replace all occurrences without checking we could use :%s/target/replace/g
+	- * - Executes a search for the word under the cursor
+	- We can use /target to search for the work globally, or we can use the * on the word when we have the cursor over it
+	- cw - 'change word' - Deletes the current word and switches to insert mode
+	- Using these, we can search the target word /target or * and then cw to change word, type our new word, then <Esc>, then 'n' to go to next occurrence of the target word, and . to repeat the cw change
+
+	# Tip #6 - Meet the Dot Formula
+	- We can identify a common pattern and utilize 'the dot formula'
+	- Movement and change
+	- We are performing a movement to a specified location, then performing a change on that location, then we press n or ; to repeat the last movement and . to repeat the last change
+	- This is the most common use case for repeatable changes in vim
+
+	### Part II - Modes
+
+	## Normal Mode
+	- The default mode of VIM, it is not insert mode, which is the mode common mode that other text editors are defaulted to.
+	- The best analogy is with a painter.
+	# Tip #7 - Pause with your brush off the page
+	- A painter spends the majority of their time with the paintbrush off of the canvas
+	- Similarly, a programmer spends the majority of their time navigating and reading code. When you need to add or change the code, you can switch to insert, brush on canvas, mode. 
+	
+	# Tip #8 - Chunk your undos
+	- The undo command will undo the last change you made to the document
+	- We can take advantage of this by making our changes in chunks
+	- Each time we press the <Esc> key after making a change, that change becomes something that can be undone
+	- By chunking the changes by train of thought, or by line, we can undo the last change that we made, organized by thoughts
