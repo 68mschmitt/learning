@@ -76,3 +76,19 @@
 	- We can take advantage of this by making our changes in chunks
 	- Each time we press the <Esc> key after making a change, that change becomes something that can be undone
 	- By chunking the changes by train of thought, or by line, we can undo the last change that we made, organized by thoughts
+
+	# Tip #9 - Compose repeatable changes
+	- Vim is optimized for repetition, so we can take advantage by being mindful with our composision
+	- Deleting a word starting with the cursor placed anywhere in the word - daw (Delete a Word)
+	- We can do the same by pressing b to get to the beginning of the word, then dw to delete the word
+	- Or we can start with the cursor on the last letter of the word and press db then x to delete the word minus the highlighted letter then x to delete the letter
+	- The most efficient solution comes when we need to repeat the change. daw works the best because it allows us to press . to repeat the complete change without any other input. Just pressing . will repeat the daw however many times you like
+
+	# Tip #10 - Use counts to do simple arithmetic
+	- Hello, this is a sentence with a number 0. I want to copy this line and change the First word and number
+	- Greetings, this is a sentence with a number 180. I want to copy this line and change the First word and number
+	- We can add or subtract with the <C-a> <C-x> respectively
+	- To perform the change above, we can position the cursor anywhere before the number in the line and enter a number followed by the arithmetic keystroke. This will jump to the number and perform the arithmetic with the given number
+
+	# Tip #11 - Don't count if you can repeat
+	- 
