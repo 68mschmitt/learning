@@ -1,36 +1,36 @@
 ### Part I - The VIM Way
-	## Practical VIM - Starting From Nothing
+## Practical VIM - Starting From Nothing
 
-	- <Cr> - Carriage return (Enter key)
+- <Cr> - Carriage return (Enter key)
 
-	# Tip #1 - The dot (.) command
+# Tip #1 - The dot (.) command
 	- dot is used to repeat the last change
 	- It is the most powerful function in vim
-		- Side tip
-			- >G command increases the indentation of the current line to the end of the file
+	- Side tip
+	- >G command increases the indentation of the current line to the end of the file
 
-	# Tip #2 - Don't repeat yourself
+# Tip #2 - Don't repeat yourself
 	- For common repeatable keystrokes, vim provides a dedicated command that combines two steps into one
 	- Example:
-		- keystroke a;<Esc> to add a semicolon to the current line
-		- Then we can press dot on the next line to repeat the last change
-		- This saves us from having to press those three keys over and over again
-		- We can use A instead of a for the command and it will save us from having to press $ to get to the end of the line as well, further optimizing our keystrokes
+	- keystroke a;<Esc> to add a semicolon to the current line
+	- Then we can press dot on the next line to repeat the last change
+	- This saves us from having to press those three keys over and over again
+	- We can use A instead of a for the command and it will save us from having to press $ to get to the end of the line as well, further optimizing our keystrokes
 	- c key - 'Change' key. c+motion deletes the text in the motion and switches to insert mode
 	- C key - c$ - Delete until the end of the line and switch to insert mode
 	- s - delete char and insert
 	- S - delete line and insert
 
-	# Tip #3 - Take one step back, and three steps forward
+# Tip #3 - Take one step back, and three steps forward
 	- We can pad a single character with two spaces (one in front, one behind) by using an idiomatic vim solution
 	- f{char} - find the first occurrance of the input {char} on the current line and go to it
 	- ; (semicolon) - repeats the last find performed, so we can use it to iteratively traverse the current line by the search term
 	- Example;
-		- var foo = "method("+argument1+","+argument2+")";
-		- keystrokes - f+ -> s_+_<Esc> -> ; -> . -> ;. -> ;.
-		- var foo = "method(" + argument1 + "," + argument2 + ")";
+	- var foo = "method("+argument1+","+argument2+")";
+	- keystrokes - f+ -> s_+_<Esc> -> ; -> . -> ;. -> ;.
+	- var foo = "method(" + argument1 + "," + argument2 + ")";
 
-	# Tip #4 - Act, Repeat, Reverse
+# Tip #4 - Act, Repeat, Reverse
 	- We can repeat other functions as well
 	- @: repeats the last Ex command
 	- & repeats the last :substitute command
@@ -48,7 +48,7 @@
 	- Perform substitution :s/target/replacement & u
 	- Execute a sequence of changes qx{changes}q @x u
 
-	# Tip #5 - Find and replace by hand
+# Tip #5 - Find and replace by hand
 	- There are cases where we would want to replace occurrences of a word one by one, to ensure that we are not replacing words that are spelled the same
 	- to replace all occurrences without checking we could use :%s/target/replace/g
 	- * - Executes a search for the word under the cursor
@@ -56,39 +56,52 @@
 	- cw - 'change word' - Deletes the current word and switches to insert mode
 	- Using these, we can search the target word /target or * and then cw to change word, type our new word, then <Esc>, then 'n' to go to next occurrence of the target word, and . to repeat the cw change
 
-	# Tip #6 - Meet the Dot Formula
+# Tip #6 - Meet the Dot Formula
 	- We can identify a common pattern and utilize 'the dot formula'
 	- Movement and change
 	- We are performing a movement to a specified location, then performing a change on that location, then we press n or ; to repeat the last movement and . to repeat the last change
 	- This is the most common use case for repeatable changes in vim
 
-	### Part II - Modes
+### Part II - Modes
 
-	## Normal Mode
+## Normal Mode
 	- The default mode of VIM, it is not insert mode, which is the mode common mode that other text editors are defaulted to.
 	- The best analogy is with a painter.
-	# Tip #7 - Pause with your brush off the page
+# Tip #7 - Pause with your brush off the page
 	- A painter spends the majority of their time with the paintbrush off of the canvas
 	- Similarly, a programmer spends the majority of their time navigating and reading code. When you need to add or change the code, you can switch to insert, brush on canvas, mode. 
-	
-	# Tip #8 - Chunk your undos
+
+# Tip #8 - Chunk your undos
 	- The undo command will undo the last change you made to the document
 	- We can take advantage of this by making our changes in chunks
 	- Each time we press the <Esc> key after making a change, that change becomes something that can be undone
 	- By chunking the changes by train of thought, or by line, we can undo the last change that we made, organized by thoughts
 
-	# Tip #9 - Compose repeatable changes
+# Tip #9 - Compose repeatable changes
 	- Vim is optimized for repetition, so we can take advantage by being mindful with our composision
-	- Deleting a word starting with the cursor placed anywhere in the word - daw (Delete a Word)
+- Deleting a word starting with the cursor placed anywhere in the word - daw (Delete a Word)
 	- We can do the same by pressing b to get to the beginning of the word, then dw to delete the word
 	- Or we can start with the cursor on the last letter of the word and press db then x to delete the word minus the highlighted letter then x to delete the letter
 	- The most efficient solution comes when we need to repeat the change. daw works the best because it allows us to press . to repeat the complete change without any other input. Just pressing . will repeat the daw however many times you like
 
-	# Tip #10 - Use counts to do simple arithmetic
+# Tip #10 - Use counts to do simple arithmetic
 	- Hello, this is a sentence with a number 0. I want to copy this line and change the First word and number
 	- Greetings, this is a sentence with a number 180. I want to copy this line and change the First word and number
 	- We can add or subtract with the <C-a> <C-x> respectively
 	- To perform the change above, we can position the cursor anywhere before the number in the line and enter a number followed by the arithmetic keystroke. This will jump to the number and perform the arithmetic with the given number
 
-	# Tip #11 - Don't count if you can repeat
-	- 
+# Tip #11 - Don't count if you can repeat
+	- You can perform a change on several words with 1 command, d7w (delete 7 words), but it is difficult to estimate the correct count every time. Especially when the number of words gets large enough
+	- It is better to perform a small change and use the . key to repeat the change. This way you can undo in small chunks and redo them to be more percise. 
+
+# Tip #12 - Combine and Conquer
+	- Operation + Motion = Action
+	- We can perform more efficient edits when we combine the motions with the operations.
+	- add aw to an operation performs it to the word we are touching, add ap and it performs it on the paragraph
+	- gU - make uppercase
+	- g~ - swap case
+	- gu - make lowercase
+	- = - autoindent
+
+### Part 3 - Insert Mode
+- 
