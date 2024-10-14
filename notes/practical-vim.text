@@ -104,4 +104,35 @@
 	- = - autoindent
 
 ### Part 3 - Insert Mode
-- 
+
+# Tip #13 - Make corrections Instantly from Insert mode
+	- We can use a command to correct a mistake we make in insert mode. We don't need to switch modes or soley rely on the backspace key
+	- Touch typing is like dancing
+	- We get so used to the steps we take while typing that when we make a mistake, we usually know it before we even register the mistake on the screen
+	- Because of this, it is best practice to delete the entire word when it is miss-spelled
+	- Then we can retype the entire word from the start
+	- By doing this, we can practice the spelling of the words we mis-spell more often and we can also get used to the motion of the keyboard more easily
+	- <C-h> - Delete back one character (like backspace)
+	- <C-w> - Delete back one word
+	- <C-u> - Delete back entire line
+	- These commands are not unique to vim, they are also applicable in the command line and shell
+
+# Tip #14 - Go back to normal
+	- Insert mode is optimized for entering text, where-as normal mode is optimized for navigating the text
+	- For this reason, we need to efficiently switch between them. There are a few tricks to reduce the friction
+	- <esc> is the normal way to go back to normal mode from insert mode
+	- <C-[> is another way to exit insert mode and go back to visual mode
+	- <C-o> switches from insert mode into 'insert normal mode'
+	* Meet Insert Normal Mode
+		- Sometimes we want to perform one normal mode command while in insert mode, there is a way to accomplish this
+		- <C-o> switches from insert mode to insert normal mode and allows you to execute one normal mode command and immediately go back to insert mode
+		- A couple examples of when we would use this function is pressing zz to move the current line to the center of the screen
+			- Or we can press <C-o>o to create a new line with the previous entered line entered into the undo buffer
+
+# Tip #15 - Paste from a register without leaving insert mode
+	- Quick tip
+		- The capslock key can be vary annoying in vim because it interfers with the normal mode commands
+		- For this reason, it is common practice to either disable the key or remap it
+		- Some remap it to the <esc> key and use it to exit insert mode, but another use is to map it to the ctrl key and use it with <C-[>
+		- Since the caps lock key is easier to reach than the Ctrl key, we can press it much easier
+  - 
