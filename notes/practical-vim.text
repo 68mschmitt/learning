@@ -135,4 +135,16 @@
 		- For this reason, it is common practice to either disable the key or remap it
 		- Some remap it to the <esc> key and use it to exit insert mode, but another use is to map it to the ctrl key and use it with <C-[>
 		- Since the caps lock key is easier to reach than the Ctrl key, we can press it much easier
-  - 
+  - Practice
+  - We'll yank the book title from the beginning of the line and put it at the end
+    - Example
+    - We press yt,
+    - Practical Vim, by Drew Neil
+    - Read Drew Neil's
+    - Then jA<space>
+    - Practical Vim, by Drew Neil
+    - Read Drew Neil's
+    - Then <C-r>0 to paste from the clipboard with .<esc> to follow
+    - Practical Vim, by Drew Neil
+    - Read Drew Neil's Practical Vim.
+
