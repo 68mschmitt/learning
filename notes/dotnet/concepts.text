@@ -1,0 +1,6 @@
+## A place to put general notes about dotnet concepts
+
+# AOT
+ - Ahead-of-time compiler
+  - Compiles code from IL to machine code
+  - Benefits include the ability to run programs on systems that don't have the dotnet runtime
