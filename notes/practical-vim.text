@@ -147,4 +147,8 @@
     - Then <C-r>0 to paste from the clipboard with .<esc> to follow
     - Practical Vim, by Drew Neil
     - Read Drew Neil's Practical Vim.
+  - While in insert mode you can press <C-r>{registerIndex} to paste from the registry
+   - <C-r><C-p>{registerIndex} will auto-indent
 
+# Tip #16 - Do back of the envelope calculations in place
+  - 
