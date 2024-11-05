@@ -1,0 +1,26 @@
+### Notes relating to kubernetes and supporting tech
+
+## What is kubernetes?
+# Portable, extensible, platform for managing containerized workloads and services
+
+# The name kubernetes comes from greek, meaning helmsman or pilot. K8S as an abbreviation comes from the 8 letters between the k and 8
+
+# Google made it open source in 2014
+
+## Why you need kubernetes?
+# Containers are a good way to bundle your applications. In a production environment you need to ensure that there is no downtime
+  If an application goes down then you need to ensure that it comes back up.
+  It would be better to handle this process with a system
+  This is where kubernetes comes to the rescue
+  
+# Kubernetes provides you with...
+  - Service discovery and load balancing
+  - Storage orchestation
+  - Automated rollouts
+  - Automatic bin packing
+  - Self-healing
+  - Secret and configuration management
+  - Batch execution
+  - Horizontal scaling
+  - IPv4/IPv6 dual-stack
+  - Designed for extensibility
