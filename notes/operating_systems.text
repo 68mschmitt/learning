@@ -1,0 +1,16 @@
+## Operating systems - Design and implementation
+
+# Some of the concepts in the book will go into detail on several concepts including...
+ - Processes
+ - Remote procedure calls
+ - Scheduling algorithms
+ - Input/output
+ - Deadlocks
+ - Device drivers
+ - Memory management
+ - Paging algorithms
+ - File system design
+ - Network file servers
+ - Atomic transactions
+ - Security and protection mechanisms
+ - Minix operating system
