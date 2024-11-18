@@ -14,3 +14,27 @@
  - Atomic transactions
  - Security and protection mechanisms
  - Minix operating system
+
+## Four major components to an operating system
+- Process management
+- Input/Output
+- Memory management
+- File system
+
+## Why minix?
+
+# Bell labs has a trade-mark on the unix operating system and prevented unix from being used in school for teaching
+  Andrew Tanenbaum - wrote the minix OS as a Unix-like operating system as a teaching aide
+
+
+## 2 Types of programs
+- System programs - manage the operation of the computer itself
+- Application programs - Solves problems for its users
+
+## Virtual machine
+- An operating system is a layer of software that sits in between the computer hardware and the user
+- It essentially creates a "Virtual machine" that abstracts the exact architecture of the computer away from the user/programmer
+
+## Microprogram
+- Typically located in the ROM (Read-only-memory)
+- A microprogram is a layer of primitive software that directly controls the individual hardware devices
