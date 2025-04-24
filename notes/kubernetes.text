@@ -15,7 +15,10 @@
   
 # Kubernetes provides you with...
   - Service discovery and load balancing
+   - Kubernetes can expose a container using the DNS name or using their own IP address
+   - If traffic is too high, then kubernetes can load balance and distribute the network traffic to remain stable
   - Storage orchestation
+   - Kubernetes allows you to automatically mount a storage system of your choice, such as 
   - Automated rollouts
   - Automatic bin packing
   - Self-healing
