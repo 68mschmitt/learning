@@ -39,4 +39,10 @@ Coords b = a;
   when you pass a struct into a function as a parameter, then it is copied and another block of memory
   is allocated onto the stack, and the values held in a are preserved
 
+- If you are focused on behavior, then you might want to use a class instead
+
+- Because structures have value types, it is recommended to make them immutable
+
+# readonly Structs
+
 - 
